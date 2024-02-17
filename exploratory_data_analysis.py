@@ -115,12 +115,12 @@ for c in df_median.columns:
 
 fig = plt.figure(figsize=(8, 4))
 ax1 = plt.subplot(121)
-plt.title("Empty data points for poor data")
+plt.title("Standard Deviation")
 plt.bar(data=std_series, x=std_series.index, height=std_series)
 plt.xticks(rotation=70)
 
 ax2 = plt.subplot(122)
-plt.title("Empty data points for poor data")
+plt.title("Median Difference of Category By Country")
 sns.heatmap(median_series, annot=True)
 
 
